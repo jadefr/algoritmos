@@ -14,4 +14,7 @@ http://wiki.c2.com/?FizzBuzzTest
 
 # Factorial
 Dado um inteiro _n_, retorna-se seu fatorial.
+
 Fórmula:
+
+    n! = n*(n-1)!
