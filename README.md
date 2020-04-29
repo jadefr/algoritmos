@@ -19,5 +19,7 @@ Dado um inteiro _n_, retorna-se seu fatorial.
 Fórmula:
 
     n! = n*(n-1)!
-    
+   
     0! = 1
+
+Foi utilizada uma pilha de recursão.
