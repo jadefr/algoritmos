@@ -1,8 +1,6 @@
 package com.company;
 
-import com.company.factorial.Factorial;
-import com.company.fizzbuzz.FizzBuzz;
-import com.company.unique.Unique;
+import com.company.stringmanipulation.StringManipulation;
 
 public class Main {
 
@@ -15,9 +13,11 @@ public class Main {
 //        int value = factorial.getFactorial(5);
 //        System.out.println(value);
 
-        Unique unique = new Unique();
-        unique.isUnique("abbab");
-        unique.isUnique("abcdefgh");
+        StringManipulation stringManipulation = new StringManipulation();
+//        stringManipulation.isUnique("abbab");
+//        stringManipulation.isUnique("abcdefgh");
 
+        stringManipulation.checkPermutation("abcabc", "aabbcc");
+        stringManipulation.checkPermutation("abcabc", "ajjjjjjj");
     }
 }
