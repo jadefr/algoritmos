@@ -28,11 +28,11 @@ Foi utilizada uma pilha de recursão.
 # StringManipulation
 Compreende os seguintes métodos:
 
-**1. isUnique**
+**1. isUnique(String string)**
 
      Verifica se uma string apresenta caracteres repetidos.
     
-**2. checkPermutation**
+**2. checkPermutation(String a, String b)**
    
     Verifica se duas strings são permutações uma da outra.
     
