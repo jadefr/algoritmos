@@ -5,6 +5,7 @@ Coletânea de problemas lógicos
 Este repositório apresenta as seguintes classes:
   * FizzBuzz
   * Factorial
+  * StringManipulation
 
 # FizzBuzz
 Problema clássico de lógica, que pede que se imprima números de 0 a 100. 
@@ -23,3 +24,15 @@ Fórmula:
     0! = 1
 
 Foi utilizada uma pilha de recursão.
+
+# StringManipulation
+Compreende os seguintes métodos:
+
+* isUnique
+
+     _verifica se uma string apresenta caracteres repetidos_
+    
+ * checkPermutation
+   
+    _verifica se duas strings são permutações uma da outra_
+
