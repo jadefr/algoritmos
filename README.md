@@ -1,6 +1,9 @@
 # algoritmos
 Coletânea de problemas lógicos
 
+# Tech Stack
+Java
+
 # Descrição
 Este repositório apresenta as seguintes classes:
   * FizzBuzz
@@ -28,11 +31,19 @@ Foi utilizada uma pilha de recursão.
 # StringManipulation
 Compreende os seguintes métodos:
 
-* isUnique
+**1. isUnique(String string)**
 
-     _verifica se uma string apresenta caracteres repetidos_
+     Verifica se uma string apresenta caracteres repetidos.
     
- * checkPermutation
+**2. checkPermutation(String a, String b)**
    
-    _verifica se duas strings são permutações uma da outra_
+    Verifica se duas strings são permutações uma da outra.
+    
+**3. urlifyWithHashMap(String string)**
+ 
+    Utiliza um HashMap pra converter caracteres vazios em %20. Apresenta complexidade O(N^2).
+   
+**4. urlify(String string)**
+ 
+    Mesmo método do anterior, porém com complexidade O(N).
 
