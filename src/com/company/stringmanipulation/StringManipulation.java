@@ -107,6 +107,8 @@ public class StringManipulation {
 
     /**
      * check if string is palindrome
+     *
+     * complexidade: O(N)
      */
     public boolean isPalindrome(String string) {
         int length = string.length();
