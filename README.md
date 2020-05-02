@@ -47,3 +47,10 @@ Compreende os seguintes métodos:
  
     Mesmo método do anterior, porém com complexidade O(N).
 
+**5. isPalindrome(String string)**
+
+    Verifica se a string é um palíndromo. Apresenta complexidade O(N).
+    
+# Sorting
+Dado um array de inteiros, faz-se sua ordenação de acordo com a abordagem Insertion Sort
+
