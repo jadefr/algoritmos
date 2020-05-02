@@ -35,4 +35,12 @@ Compreende os seguintes métodos:
  * checkPermutation
    
     _verifica se duas strings são permutações uma da outra_
+    
+ * urlifyWithHashMap(String string)
+ 
+   _utiliza um HashMap pra converter caracteres vazios em %20; apresenta complexidade O(N^2)
+   
+ * urlify(String string)
+ 
+   _mesmo método do anterior, porém com complexidade O(N)
 
