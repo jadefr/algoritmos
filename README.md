@@ -1,6 +1,9 @@
 # algoritmos
 Coletânea de problemas lógicos
 
+# Tech Stack
+Java
+
 # Descrição
 Este repositório apresenta as seguintes classes:
   * FizzBuzz
