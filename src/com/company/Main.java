@@ -19,10 +19,13 @@ public class Main {
 //        stringManipulation.checkPermutation("abcabc", "aabbcc");
 //        stringManipulation.checkPermutation("abcabc", "ajjjjjjj");
 
-        String urlified1 = stringManipulation.urlify("hello world hello world");
+        String urlified1 = stringManipulation.urlifyWithHashMap("hello world hello world");
         System.out.println(urlified1);
-        String urlified2 = stringManipulation.urlify("helloworldhelloworld");
+        String urlified2 = stringManipulation.urlifyWithHashMap("helloworldhelloworld");
         System.out.println(urlified2);
+
+        String urlify = stringManipulation.urlify("helloworld  ");
+        System.out.println(urlify);
 
     }
 }

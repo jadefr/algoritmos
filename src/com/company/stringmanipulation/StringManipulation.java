@@ -60,8 +60,10 @@ public class StringManipulation {
      * Write a method to replace all spaces in a string with '%20'. You may assume that the string
      * has sufficient space at the end to hold the additional characters, and that you are given the "true"
      * length of the string.
+     *
+     *  complexidade: O(N^2)
      */
-    public String urlify(String string) {
+    public String urlifyWithHashMap(String string) {
         HashMap<Integer, String> hashMap = new HashMap<>();
 
         for (int i = 0; i < string.length(); i++) {
@@ -77,6 +79,27 @@ public class StringManipulation {
         String urlified = "";
         for (String s: hashMap.values()) {
             urlified = urlified.concat(s);
+        }
+        return urlified;
+    }
+
+
+    /**
+     * Mesmo método do anterior, porém com complexidade O(N)
+     *
+     */
+    public String urlify(String string) {
+        String urlified = "";
+
+        for (int i = 0; i < string.length(); i++) {
+            String charAt = String.valueOf(string.charAt(i));
+
+            if (!(charAt.equals(" "))) {
+                urlified = urlified.concat(charAt);
+            }
+            else {
+               urlified = urlified.concat("%20");
+            }
         }
         return urlified;
     }
