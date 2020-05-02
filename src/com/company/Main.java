@@ -16,8 +16,13 @@ public class Main {
         StringManipulation stringManipulation = new StringManipulation();
 //        stringManipulation.isUnique("abbab");
 //        stringManipulation.isUnique("abcdefgh");
+//        stringManipulation.checkPermutation("abcabc", "aabbcc");
+//        stringManipulation.checkPermutation("abcabc", "ajjjjjjj");
 
-        stringManipulation.checkPermutation("abcabc", "aabbcc");
-        stringManipulation.checkPermutation("abcabc", "ajjjjjjj");
+        String urlified1 = stringManipulation.urlify("hello world hello world");
+        System.out.println(urlified1);
+        String urlified2 = stringManipulation.urlify("helloworldhelloworld");
+        System.out.println(urlified2);
+
     }
 }

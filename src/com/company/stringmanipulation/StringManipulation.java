@@ -2,6 +2,7 @@ package com.company.stringmanipulation;
 
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class StringManipulation {
 
@@ -28,6 +29,7 @@ public class StringManipulation {
         }
     }
 
+
     /**
      *Given two strings, write a method to decide if one is a permutation of the
      *      other
@@ -51,5 +53,31 @@ public class StringManipulation {
         } else {
             System.out.println("Strings " + a + " and " + b +" are permutations");
         }
+    }
+
+
+    /**
+     * Write a method to replace all spaces in a string with '%20'. You may assume that the string
+     * has sufficient space at the end to hold the additional characters, and that you are given the "true"
+     * length of the string.
+     */
+    public String urlify(String string) {
+        HashMap<Integer, String> hashMap = new HashMap<>();
+
+        for (int i = 0; i < string.length(); i++) {
+            String charAt = String.valueOf(string.charAt(i));
+
+            if (!(charAt.equals(" "))) {
+                hashMap.put(i, charAt);
+            } else {
+                hashMap.put(i, "%20");
+            }
+        }
+
+        String urlified = "";
+        for (String s: hashMap.values()) {
+            urlified = urlified.concat(s);
+        }
+        return urlified;
     }
 }
