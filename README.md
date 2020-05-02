@@ -28,19 +28,19 @@ Foi utilizada uma pilha de recursão.
 # StringManipulation
 Compreende os seguintes métodos:
 
-* isUnique
+1. **isUnique**
 
      _verifica se uma string apresenta caracteres repetidos_
     
- * checkPermutation
+2. **checkPermutation**
    
     _verifica se duas strings são permutações uma da outra_
     
- * urlifyWithHashMap(String string)
+3. **urlifyWithHashMap(String string)**
  
    _utiliza um HashMap pra converter caracteres vazios em %20; apresenta complexidade O(N^2)
    
- * urlify(String string)
+4. **urlify(String string)**
  
    _mesmo método do anterior, porém com complexidade O(N)
 
