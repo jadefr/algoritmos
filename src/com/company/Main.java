@@ -14,7 +14,11 @@ public class Main {
 //        int value = factorial.getFactorial(5);
 //        System.out.println(value);
 
-//        StringManipulation stringManipulation = new StringManipulation();
+//        Sorting sorting = new Sorting();
+//        int[] array = {9, 14, 3, 2, 43, 11, 58, 22};
+//        sorting.printInsertionSort(array);
+
+        StringManipulation stringManipulation = new StringManipulation();
 //        stringManipulation.isUnique("abbab");
 //        stringManipulation.isUnique("abcdefgh");
 //        stringManipulation.checkPermutation("abcabc", "aabbcc");
@@ -26,10 +30,6 @@ public class Main {
 //        String urlify = stringManipulation.urlify("helloworld  ");
 //        System.out.println(urlify);
 //        System.out.println(stringManipulation.isPalindrome("omississimo"));
-
-        Sorting sorting = new Sorting();
-        int[] array =  {9,14,3,2,43,11,58,22};
-        sorting.printInsertionSort(array);
-
+        System.out.println(stringManipulation.isPermutationAPalindrome("aaaabbccd"));
     }
 }

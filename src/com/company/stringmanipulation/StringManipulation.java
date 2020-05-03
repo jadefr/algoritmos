@@ -121,4 +121,40 @@ public class StringManipulation {
 
         return true;
     }
+
+
+    /**
+     * Given a string, write a function to check if it is a permutation of a palindrome.
+     * A palindrome is a word or phrase that is the same forwards and backwards.
+     * A permutation is a rearrangement of letters.
+     */
+    public boolean isPermutationAPalindrome(String string) {
+       HashMap<Character, Integer> hash = new HashMap<>();
+
+       for (int i = 0; i < string.length(); i++) {
+           if(!hash.containsKey(string.charAt(i))) {
+               hash.put(string.charAt(i), 1);
+           }
+           else {
+               int count = hash.get(string.charAt(i)) + 1;
+               hash.put(string.charAt(i), count);
+           }
+       }
+        System.out.println(hash);
+
+       ArrayList<Integer> listOfOdds = new ArrayList<>();
+       for (int i : hash.values()) {
+           if (i % 2 != 0) {
+               listOfOdds.add(i);
+           }
+       }
+
+        for (int i : hash.values()) {
+            if ((i % 2 == 0) && (listOfOdds.size() <= 1 )) {
+                return true;
+            }
+        }
+
+        return false;
+    }
 }
