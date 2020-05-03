@@ -8,6 +8,9 @@ public class StringManipulation {
 
     /**
      * Implement an algorithm to determine if a string has all unique characters.
+     *
+     * complexidade: O(N)
+     * utiliza uma estrutura adicional
      */
     public void isUnique(String string) {
         ArrayList<Character> arrayList = new ArrayList<>();
@@ -18,9 +21,9 @@ public class StringManipulation {
             }
         }
 
-        for (char c: arrayList) {
-            System.out.println(c);
-        }
+//        for (char c: arrayList) {
+//            System.out.println(c);
+//        }
 
         if (arrayList.size() < string.length()) {
             System.out.println("A string apresenta caracteres repetidos \n");
@@ -33,6 +36,9 @@ public class StringManipulation {
     /**
      *Given two strings, write a method to decide if one is a permutation of the
      *      other
+     *
+     * complexidade: O(N)
+     * utiliza uma estrutura adicional
      */
     public void checkPermutation(String a, String b) {
         ArrayList<Boolean> booleans = new ArrayList<Boolean>();

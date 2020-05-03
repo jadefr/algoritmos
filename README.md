@@ -35,14 +35,19 @@ Compreende os seguintes métodos:
 **1. isUnique(String string)**
 
      Verifica se uma string apresenta caracteres repetidos.
+     Complexidade: O(N)
+     Utiliza uma estrutura adicional
     
 **2. checkPermutation(String a, String b)**
    
     Verifica se duas strings são permutações uma da outra.
+    Complexidade: O(N)
+    Utiliza uma estrutura adicional
     
 **3. urlifyWithHashMap(String string)**
  
-    Utiliza um HashMap pra converter caracteres vazios em %20. Apresenta complexidade O(N^2).
+    Utiliza um HashMap pra converter caracteres vazios em %20.
+    Apresenta complexidade O(N^2).
    
 **4. urlify(String string)**
  
@@ -50,7 +55,8 @@ Compreende os seguintes métodos:
 
 **5. isPalindrome(String string)**
 
-    Verifica se a string é um palíndromo. Apresenta complexidade O(N).
+    Verifica se a string é um palíndromo.
+    Apresenta complexidade O(N).
     
 **6. isPermutationAPalindrome(String string)**
     
