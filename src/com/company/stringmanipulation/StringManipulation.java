@@ -21,10 +21,6 @@ public class StringManipulation {
             }
         }
 
-//        for (char c: arrayList) {
-//            System.out.println(c);
-//        }
-
         if (arrayList.size() < string.length()) {
             System.out.println("A string apresenta caracteres repetidos \n");
         } else {
@@ -166,4 +162,61 @@ public class StringManipulation {
 
         return false;
     }
+
+
+    /**
+     * One Away: There are three types of edits that can be performed on strings: insert a character,
+     * remove a character, or replace a character. Given two strings, write a function to check if they are
+     * one edit (or zero edits) away.
+     *
+     * worst case (i.e., replace case): O(N)
+     * best case (i.e., insert and remove cases): O(1)
+     */
+    public boolean isOneAway(String a, String b) {
+        int lengthA = a.length();
+        int lengthB = b.length();
+        ArrayList<Integer> replaceOne = new ArrayList<>();
+
+        if (lengthA == (lengthB + 1)) {
+            if (a.contains(b)) {
+                System.out.println(a + " is one insertion away from " + b);
+                return true;
+            }
+        }
+        else if (lengthB == (lengthA + 1)) {
+            if (b.contains(a)) {
+                System.out.println(a + " is one removal away from " + b);
+                return true;
+            }
+        }
+        else if (lengthA == lengthB) {
+            for (int i = 0 ; i < lengthA; i ++) {
+                if (a.charAt(i) != b.charAt(i)) {
+                    replaceOne.add(i);
+                }
+            }
+            if (replaceOne.size() == 1) {
+                System.out.println(a + " is one edit away from " + b);
+                return true;
+            }
+        }
+
+        System.out.println("Not applicable");
+        return false;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

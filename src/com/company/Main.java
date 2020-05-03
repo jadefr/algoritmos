@@ -30,6 +30,7 @@ public class Main {
 //        String urlify = stringManipulation.urlify("helloworld  ");
 //        System.out.println(urlify);
 //        System.out.println(stringManipulation.isPalindrome("omississimo"));
-        System.out.println(stringManipulation.isPermutationAPalindrome("aaaaaa"));
+//        System.out.println(stringManipulation.isPermutationAPalindrome("aaaaaa"));
+        System.out.println(stringManipulation.isOneAway("baab", "aabb"));
     }
 }
