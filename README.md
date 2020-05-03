@@ -64,6 +64,15 @@ Compreende os seguintes métodos:
     Pior caso: O(N^3)
     Melhor caso: O(N)
     
+**7. isOneAway(String a, String b)**
+    
+    There are three types of edits that can be performed on strings: insert a character,
+    remove a character, or replace a character. Given two strings, write a function to check if they are
+    one edit (or zero edits) away.
+    
+    Pior caso (i.e., replace): O(N)
+    Melhor caso (i.e., remoção ou adição): O(1)
+    
 # Sorting
 Dado um array de inteiros, faz-se sua ordenação de acordo com a abordagem Insertion Sort
 
