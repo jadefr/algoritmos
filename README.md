@@ -9,6 +9,7 @@ Este repositório apresenta as seguintes classes:
   * FizzBuzz
   * Factorial
   * StringManipulation
+  * Sorting
 
 # FizzBuzz
 Problema clássico de lógica, que pede que se imprima números de 0 a 100. 
