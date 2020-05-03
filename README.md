@@ -51,7 +51,7 @@ Compreende os seguintes métodos:
 
     Verifica se a string é um palíndromo. Apresenta complexidade O(N).
     
-**6. isPermutationAPalindrome(String string)
+**6. isPermutationAPalindrome(String string)**
     
     Verifica se uma dada string é uma permutação de um palíndromo.
     Pior caso: O(N^3)
