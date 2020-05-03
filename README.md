@@ -9,6 +9,7 @@ Este repositório apresenta as seguintes classes:
   * FizzBuzz
   * Factorial
   * StringManipulation
+  * Sorting
 
 # FizzBuzz
 Problema clássico de lógica, que pede que se imprima números de 0 a 100. 
@@ -46,4 +47,17 @@ Compreende os seguintes métodos:
 **4. urlify(String string)**
  
     Mesmo método do anterior, porém com complexidade O(N).
+
+**5. isPalindrome(String string)**
+
+    Verifica se a string é um palíndromo. Apresenta complexidade O(N).
+    
+**6. isPermutationAPalindrome(String string)**
+    
+    Verifica se uma dada string é uma permutação de um palíndromo.
+    Pior caso: O(N^3)
+    Melhor caso: O(N)
+    
+# Sorting
+Dado um array de inteiros, faz-se sua ordenação de acordo com a abordagem Insertion Sort
 
