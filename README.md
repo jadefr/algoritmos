@@ -54,6 +54,8 @@ Compreende os seguintes métodos:
 **6. isPermutationAPalindrome(String string)
     
     Verifica se uma dada string é uma permutação de um palíndromo.
+    Pior caso: O(N^3)
+    Melhor caso: O(N)
     
 # Sorting
 Dado um array de inteiros, faz-se sua ordenação de acordo com a abordagem Insertion Sort
