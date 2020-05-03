@@ -195,6 +195,10 @@ public class StringManipulation {
                     replaceOne.add(i);
                 }
             }
+            if (replaceOne.size() == 0) {
+                System.out.println(a + " is equal to " + b);
+                return true;
+            }
             if (replaceOne.size() == 1) {
                 System.out.println(a + " is one edit away from " + b);
                 return true;
