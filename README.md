@@ -73,7 +73,13 @@ Compreende os seguintes métodos:
     Pior caso (i.e., replace): O(N)
     Melhor caso (i.e., remoção ou adição): O(1)
     
-**8. compressString(String string)**
+**8. excludeDuplicates(String string)**
+      
+     Exclude duplicate (in sequence) characters from a string
+     
+     Complexidade: O(N)
+    
+**9. compressString(String string)**
     
      Implement a method to perform basic string compression using the counts
      of repeated characters. For example, the string aabcccccaaa would become a2blc5a3.
