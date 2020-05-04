@@ -210,6 +210,61 @@ public class StringManipulation {
     }
 
 
+    /**
+     *
+     */
+    public void excludeDuplicates(String string) {
+        String compressed = "";
+
+        for (int i = 0; i < string.length(); i++) {
+            String charAt = String.valueOf(string.charAt(i));
+            compressed = compressed.concat(charAt);
+            int last = (compressed.length());
+
+            if ((i >0) && (string.charAt(i - 1) == string.charAt(i))) {
+                compressed = compressed.substring(0, last - 1);
+            }
+        }
+        System.out.println(compressed);
+    }
+
+
+    /**
+     * Implement a method to perform basic string compression using the counts
+     * of repeated characters. For example, the string aabcccccaaa would become a2blc5a3.
+     *
+     * complexidade: O(N)
+     */
+    public void compressString(String string) {
+        String compressed = "";
+        int length = string.length();
+        int[] count = new int[length];
+
+        for (int i = 0; i < length; i++) {
+            String charAt = String.valueOf(string.charAt(i));
+            count[i] = 1;
+
+            if ((i > 0) && (string.charAt(i - 1) == string.charAt(i))) {
+                count[i] = count[i - 1] + 1;
+                System.out.println("i:  " + i + " || char(i): " + string.charAt(i)  + "  ||  count[i]:  " + count[i]);
+            }
+            else {
+                if ( i > 1) {
+                    System.out.println("count:  " + count[i - 1] + " ||  char(i - 1): " + string.charAt(i - 1));
+                    compressed = compressed + count[i - 1];
+                }
+                compressed = compressed.concat(charAt);
+            }
+
+            if (i == (length - 1)) {     // last character
+                compressed = compressed + count[i];
+            }
+
+        }
+        System.out.println(compressed);
+    }
+
+
 
 
 

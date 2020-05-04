@@ -31,6 +31,8 @@ public class Main {
 //        System.out.println(urlify);
 //        System.out.println(stringManipulation.isPalindrome("omississimo"));
 //        System.out.println(stringManipulation.isPermutationAPalindrome("aaaaaa"));
-        System.out.println(stringManipulation.isOneAway("abcd", "abcd"));
+//        System.out.println(stringManipulation.isOneAway("abcd", "abcd"));
+        stringManipulation.compressString("aaaaabbbccccccdef");
+//        stringManipulation.excludeDuplicates("aaaabbcdeeeffgggghijj");
     }
 }
