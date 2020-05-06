@@ -51,12 +51,14 @@ Compreende os seguintes métodos:
    
 **4. urlify(String string)**
  
-    Mesmo método do anterior, porém com complexidade O(N/2) ≡ O(N).
+    Mesmo método do anterior, porém se utiliza de uma string vazia para ir reescrevendo a string recebida, 
+    adicionando %20 onde necessário.
+    Complexidade: O(N)
 
 **5. isPalindrome(String string)**
 
     Verifica se a string é um palíndromo.
-    Apresenta complexidade O(N).
+    Apresenta complexidade O(N/2) ≡ O(N).
     
 **6. isPermutationAPalindrome(String string)**
     
