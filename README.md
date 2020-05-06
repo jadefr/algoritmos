@@ -51,7 +51,7 @@ Compreende os seguintes métodos:
    
 **4. urlify(String string)**
  
-    Mesmo método do anterior, porém com complexidade O(N).
+    Mesmo método do anterior, porém com complexidade O(N/2) ≡ O(N).
 
 **5. isPalindrome(String string)**
 
@@ -61,7 +61,7 @@ Compreende os seguintes métodos:
 **6. isPermutationAPalindrome(String string)**
     
     Verifica se uma dada string é uma permutação de um palíndromo.
-    Pior caso: O(N^3)
+    Pior caso: O(N*3) ≡ O(N)
     Melhor caso: O(N)
     
 **7. isOneAway(String a, String b)**
