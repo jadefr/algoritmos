@@ -4,6 +4,8 @@ import com.company.hackerrank.HackerRank;
 import com.company.stringmanipulation.StringManipulation;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
 
 public class Main {
@@ -46,18 +48,34 @@ public class Main {
 //        int[] b = {99, 16, 8};
 //        hackerRank.printCompareTriplets(a, b);
 
-        List<Integer> listA = new ArrayList<>();
-        listA.add(17);
-        listA.add(28);
-        listA.add(30);
+//        List<Integer> listA = new ArrayList<>();
+//        listA.add(17);
+//        listA.add(28);
+//        listA.add(30);
+//        System.out.println(Collections.max(listA));
+//        List<Integer> listB = new ArrayList<>();
+//        listB.add(99);
+//        listB.add(16);
+//        listB.add(8);
+//        hackerRank.compareTripletsWithList(listA, listB);
 
-        List<Integer> listB = new ArrayList<>();
-        listB.add(99);
-        listB.add(16);
-        listB.add(8);
+//        long longA = 1234567890;
+//        int intA = 1234567890;
+//        long longB = 999999999999999999L;
+//        String sB = String.valueOf(longB);
+//        System.out.println(sB.length());
+//        System.out.println(sB.charAt(6));
 
-        hackerRank.compareTripletsWithList(listA, listB);
+//        HashMap<String, Integer> hashMap = new HashMap<>();
+//        hashMap.put("lorem", 5);
+//        hashMap.put("ipsum", 10);
+//        hashMap.put("fac ut ardeat cor meum", 15);
+//        System.out.println(Collections.max(hashMap.values()));
 
-
+        long x = 10000;
+        long y = 205;
+        long z = 55;
+        long[] array = {x, y, z};
+        hackerRank.sumBigNumbers(array);
     }
 }
