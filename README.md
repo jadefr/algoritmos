@@ -47,21 +47,23 @@ Compreende os seguintes métodos:
 **3. urlifyWithHashMap(String string)**
  
     Utiliza um HashMap pra converter caracteres vazios em %20.
-    Apresenta complexidade O(N^2).
+    Apresenta complexidade O(N*2) ≡ O(N).
    
 **4. urlify(String string)**
  
-    Mesmo método do anterior, porém com complexidade O(N).
+    Mesmo método do anterior, porém se utiliza de uma string vazia para ir reescrevendo a string recebida, 
+    adicionando %20 onde necessário.
+    Complexidade: O(N)
 
 **5. isPalindrome(String string)**
 
     Verifica se a string é um palíndromo.
-    Apresenta complexidade O(N).
+    Apresenta complexidade O(N/2) ≡ O(N).
     
 **6. isPermutationAPalindrome(String string)**
     
     Verifica se uma dada string é uma permutação de um palíndromo.
-    Pior caso: O(N^3)
+    Pior caso: O(N*3) ≡ O(N)
     Melhor caso: O(N)
     
 **7. isOneAway(String a, String b)**
@@ -72,6 +74,19 @@ Compreende os seguintes métodos:
     
     Pior caso (i.e., replace): O(N)
     Melhor caso (i.e., remoção ou adição): O(1)
+    
+**8. excludeDuplicates(String string)**
+      
+     Exclude duplicate (in sequence) characters from a string
+     
+     Complexidade: O(N)
+    
+**9. compressString(String string)**
+    
+     Implement a method to perform basic string compression using the counts
+     of repeated characters. For example, the string aabcccccaaa would become a2blc5a3.
+     
+     Complexidade: O(N)
     
 # Sorting
 Dado um array de inteiros, faz-se sua ordenação de acordo com a abordagem Insertion Sort
