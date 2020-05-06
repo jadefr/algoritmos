@@ -2,7 +2,6 @@ package com.company.hackerrank;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.HashMap;
 import java.util.List;
 
 public class HackerRank {
@@ -106,7 +105,7 @@ public class HackerRank {
                 int digit = Character.getNumericValue(number.charAt(i));
                 digits[i] = digits[i] + digit;
 
-                if ((digits[i] >= 10) && (i > -1)) {
+                if ((digits[i] >= 10) && (i > 0)) {
                     int mod = digits[i] % 10;
                     int div = digits[i] / 10;
                     digits[i] = mod;
