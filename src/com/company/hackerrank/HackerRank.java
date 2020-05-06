@@ -73,9 +73,9 @@ public class HackerRank {
 
 
     /**
-     *
+     * Given an array of longs, sum the elements
      */
-    public void sumBigNumbers(long[] ar) {
+    public long sumBigNumbers(long[] ar) {
         ArrayList<String> numbers = new ArrayList<>();
         ArrayList<Integer> lengths = new ArrayList<>();
 
@@ -98,19 +98,7 @@ public class HackerRank {
             numbers.set(i,numberPaddedWithZeros);
         }
 
-        for (String s : numbers) {
-            System.out.print(s);
-            System.out.println(" ");
-        }
-
         int[] digits = new int[biggestLength];
-
-//        for (String number: numbers) {
-//            for (int i = 0; i < biggestLength; i++) {
-//                int digit = Character.getNumericValue(number.charAt(i));
-//                digits[i] = digits[i] + digit;
-//            }
-//        }
 
         for (String number: numbers) {
             int i = biggestLength - 1;
@@ -118,32 +106,21 @@ public class HackerRank {
                 int digit = Character.getNumericValue(number.charAt(i));
                 digits[i] = digits[i] + digit;
 
-                if ((digits[i] >= 10) && (i > 0)) {
+                if ((digits[i] >= 10) && (i > -1)) {
                     int mod = digits[i] % 10;
                     int div = digits[i] / 10;
-                    System.out.println("digit: " + digits[i]);
-                    System.out.println("digit mod: " + digits[i] % 10);
-                    System.out.println("digit div: " + digits[i] / 10);
                     digits[i] = mod;
-                    digits[i - 1] = div;
+                    digits[i - 1] = digits[i - 1] + div;
                 }
                 i--;
             }
-//
-//            for (int n = (biggestLength - 1); n >= 0; n++) {
-//                System.out.print(n + " ");
-//                int digit = Character.getNumericValue(number.charAt(n));
-//                digits[n] = digits[n] + digit;
-//
-//                int vaiUm = digits[n] % 10;
-//            }
         }
 
-
+        long sum = 0;
         for (int i: digits) {
-            System.out.print(i);
+            sum = 10*sum + i;
         }
-
+        return sum;
     }
 
 }

@@ -72,10 +72,11 @@ public class Main {
 //        hashMap.put("fac ut ardeat cor meum", 15);
 //        System.out.println(Collections.max(hashMap.values()));
 
-        long x = 10000;
-        long y = 205;
-        long z = 55;
-        long[] array = {x, y, z};
-        hackerRank.sumBigNumbers(array);
+        long x = 18676;
+        long y = 4375;
+        long z = 950;
+        long a = 5005;
+        long[] array = {x, y, z, a};
+        System.out.println(hackerRank.sumBigNumbers(array));
     }
 }
