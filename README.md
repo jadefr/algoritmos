@@ -47,7 +47,7 @@ Compreende os seguintes métodos:
 **3. urlifyWithHashMap(String string)**
  
     Utiliza um HashMap pra converter caracteres vazios em %20.
-    Apresenta complexidade O(N^2).
+    Apresenta complexidade O(N*2) ≡ O(N).
    
 **4. urlify(String string)**
  
