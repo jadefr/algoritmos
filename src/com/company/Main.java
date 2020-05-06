@@ -1,7 +1,10 @@
 package com.company;
 
-import com.company.sorting.Sorting;
+import com.company.hackerrank.HackerRank;
 import com.company.stringmanipulation.StringManipulation;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
 
@@ -32,7 +35,29 @@ public class Main {
 //        System.out.println(stringManipulation.isPalindrome("omississimo"));
 //        System.out.println(stringManipulation.isPermutationAPalindrome("aaaaaa"));
 //        System.out.println(stringManipulation.isOneAway("abcd", "abcd"));
-        stringManipulation.compressString("aaaaabbbccccccdefaaaa");
+//        stringManipulation.compressString("aaaaabbbccccccdefaaaa");
 //        stringManipulation.excludeDuplicates("aaaabbcdeeeffgggghijj");
+
+        HackerRank hackerRank = new HackerRank();
+//        int[] array = {2, 5, 10};
+//        System.out.println(hackerRank.getSimpleArraySum(array));
+
+//        int[] a = {17, 28, 30};
+//        int[] b = {99, 16, 8};
+//        hackerRank.printCompareTriplets(a, b);
+
+        List<Integer> listA = new ArrayList<>();
+        listA.add(17);
+        listA.add(28);
+        listA.add(30);
+
+        List<Integer> listB = new ArrayList<>();
+        listB.add(99);
+        listB.add(16);
+        listB.add(8);
+
+        hackerRank.compareTripletsWithList(listA, listB);
+
+
     }
 }
