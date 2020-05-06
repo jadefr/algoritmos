@@ -102,7 +102,7 @@ Apresenta os seguintes métodos:
       Given an array of integers, find the sum of its elements.
       
       
-**2. compareTriplets(int[] a, int[] b) **
+**2. compareTriplets(int[] a, int[] b)**
   
       Given two int arrays, compare each's element
 
@@ -113,3 +113,7 @@ Apresenta os seguintes métodos:
 **4. compareTripletsWithList(List<Integer> a, List<Integer> b)**
  
      Similar to compareTriplets, but made with list.
+     
+**5. sumBigNumbers(long[] ar)**     
+     
+      Given an array of longs, sum the elements
