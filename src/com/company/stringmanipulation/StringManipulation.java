@@ -63,7 +63,7 @@ public class StringManipulation {
      * has sufficient space at the end to hold the additional characters, and that you are given the "true"
      * length of the string.
      *
-     *  complexidade: O(N^2)
+     *  complexidade: O(N2)
      */
     public String urlifyWithHashMap(String string) {
         HashMap<Integer, String> hashMap = new HashMap<>();
@@ -87,7 +87,9 @@ public class StringManipulation {
 
 
     /**
-     * Mesmo método do anterior, porém com complexidade O(N)
+     * Mesmo método do anterior.
+     *
+     * complexidade O(N)
      *
      */
     public String urlify(String string) {
@@ -130,7 +132,7 @@ public class StringManipulation {
      * A palindrome is a word or phrase that is the same forwards and backwards.
      * A permutation is a rearrangement of letters.
      *
-     * pior caso: O(N^3)
+     * pior caso: O(N*3)
      * melhor caso: O(N)
      */
     public boolean isPermutationAPalindrome(String string) {
@@ -211,7 +213,9 @@ public class StringManipulation {
 
 
     /**
+     * exclude duplicate (in sequence) characters from a string
      *
+     * complexidade: O(N)
      */
     public void excludeDuplicates(String string) {
         String compressed = "";
