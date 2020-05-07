@@ -10,6 +10,7 @@ Este repositório apresenta as seguintes classes:
   * Factorial
   * StringManipulation
   * Sorting
+  * HackerRank
 
 # FizzBuzz
 Problema clássico de lógica, que pede que se imprima números de 0 a 100. 
@@ -91,3 +92,28 @@ Compreende os seguintes métodos:
 # Sorting
 Dado um array de inteiros, faz-se sua ordenação de acordo com a abordagem Insertion Sort
 
+# HackerRank
+Questões retiradas da seção Algorithms do https://www.hackerrank.com/
+
+Apresenta os seguintes métodos:
+
+**1. getSimpleArraySum (int[] arr)**
+  
+      Given an array of integers, find the sum of its elements.
+      
+      
+**2. compareTriplets(int[] a, int[] b)**
+  
+      Given two int arrays, compare each's element
+
+**3. printCompareTriplets(int[] a, int[] b)**
+   
+     Imprime o resultado do método anterior.
+     
+**4. compareTripletsWithList(List<Integer> a, List<Integer> b)**
+ 
+     Similar to compareTriplets, but made with list.
+     
+**5. sumBigNumbers(long[] ar)**     
+     
+      Given an array of longs, sum the elements
